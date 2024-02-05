@@ -82,12 +82,12 @@ void setup() {
   Blynk.virtualWrite(V0, relative_humidity_measure);
   Blynk.virtualWrite(V1, temp_measure);
 
-  delay(3000);
+  delay(1000);
 
 
   Serial.println("Going to sleep for 5 seconds...");
   delay(100);
-  ESP.deepSleep(2e6);
+  ESP.deepSleep(5e6);
   
 }
 
